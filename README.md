@@ -1,5 +1,4 @@
 # douban-webpack
 
-npm init<br/>
-webpack<br/>
+npm init
 npm start
