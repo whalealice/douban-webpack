@@ -98,7 +98,7 @@
 	font-size: 0.5rem;
 	color:#494949;
 	overflow: hidden;
-	white-space: norwap;
+	white-space: nowrap;
 	text-overflow:ellipsis;
 }
 

@@ -1,14 +1,10 @@
 import $ from 'jquery';
 $(function(){
-	$('#form').bind("submit",function(){
-		go();
+	$('#searchValue').on("blur",function(){
+		var val = $(this).val();
+		var code = encodeURI(encodeURI(val));
+	    location.href = 'list.html?search='+code+'';
 	});
-	function go(){
-	    var val = $('#searchValue').val();
-	    var code = encodeURI(encodeURI(val));
-	    $('#form').attr('action','list.html?search='+code+'');
-	    return true;
-	}
 	//点击出现搜索
 	$('#search').on("click",function(){
 		if ($('.HeaderNav').hasClass('isActive')) {
